@@ -25,3 +25,20 @@ The pipeline implements a **Planner-Worker-Critic** triad using LangGraph, overr
    ```bash
    git clone https://github.com/Flinty21/leftover-food-agent.git
    cd leftover-food-agent
+
+2. Create and activate a virtual environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate
+
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+
+4. Start the local Ollama engine (requires [Ollama](https://ollama.com/) installed with the `llama3.2` model):
+   ```bash
+   ollama serve
+
+5. Launch the Streamlit interface:
+   ```bash
+   streamlit run app.py
